@@ -13,6 +13,5 @@ sql_scripts
   `populate_tables.sql`: Script to populate the tables with data from `.csv` files.
   `modifying_month_format.sql`: Script to manipulate date format in table `fact_sales` (after populating the fact table, I noticed that the month number is registered as day and the day number as month).
   `create_views.sql`: Script to create the `v_sales_report` view to create one big table by joining `fact_sales` with `dim_store` and `dim_product`.
-  `create_materialized_views.sql`
   `sales_store.sql`
   `sales_product.sql`
