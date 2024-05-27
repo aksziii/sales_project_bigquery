@@ -1,7 +1,7 @@
 CREATE OR REPLACE VIEW aksziii_sales.v_product_sales AS
 WITH sales_by_product AS ( 
 	SELECT month, product_name, SUM(sales_value) AS total_sales
-	FROM aksziii_sales.mv_monthly_sales
+	FROM aksziii_sales.v_sales_report
 	GROUP BY month, product_name),
 
 avg_sales AS ( 
