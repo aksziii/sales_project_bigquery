@@ -5,7 +5,7 @@ This BigQuery project demonstrates my technical skills in SQL using Common Table
 `csv_data/`
   `dim_store.csv`: store details
   `dim_product.csv`: product details
-  `fact_sales.csv`: sold quantity by month, store and product
+  `fact_sales.csv`: sold quantity by month, store_id and product_id
 
 `sql_scripts/`
   `create_tables.sql`: Script to create the `dim_store`, `dim_product`, and `fact_sales` tables.
