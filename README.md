@@ -3,6 +3,7 @@
 This BigQuery project demonstrates my technical skills in SQL using Common Table Expressions (CTEs), window functions and views for handling sales data. Data is randomly generated. Data files (.csv) were uploaded to Google Cloud Storage.
 
 `csv_data/`
+  
   `dim_store.csv`: store details
   
   `dim_product.csv`: product details
