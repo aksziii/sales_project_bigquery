@@ -5,11 +5,11 @@ This BigQuery project demonstrates my technical skills in SQL using Common Table
 
 ## Data Sources
 `csv_data/`
-- **dim_store.csv**: store details
-- **dim_product.csv**: product details
-- **fact_sales.csv**: sold quantity by month, store_id and product_id
+- **`dim_store.csv`**: store details
+- **`dim_product.csv`**: product details
+- **`fact_sales.csv`**: sold quantity by month, store_id and product_id
 
-## Data Preparation (SQL)
+## Data Preparation (Google BigQuery)
 `sql_scripts/`
 - **`create_tables.sql`**: Script to create the `dim_store`, `dim_product`, and `fact_sales` tables.
 - **`populate_tables.sql`**: Script to populate the tables with data from `.csv` files that are located in a Google Cloud Storage.
@@ -27,3 +27,9 @@ DAX measures
 - **Total Sales Value** = SUM(v_sales_report[sales_value])
 - **YoY - Total Quantity** = DIVIDE([Total Quantity],CALCULATE([Total Quantity],DATEADD('Calendar'[Date],-1,YEAR)))-1
 - **YoY - Total Sales Value** = DIVIDE([Total Sales Value],CALCULATE([Total Sales Value],DATEADD('Calendar'[Date],-1,YEAR)))-1
+
+## Screenshots - Google BigQuery
+![v_sales_report](sql_scripts/snapshot_bigquery.png)
+
+## Screenshots - Power BI
+![Sales Dashboard](power_bi/snapshot_aksziii_sales_power_bi.png)
