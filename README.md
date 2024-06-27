@@ -21,3 +21,9 @@ This BigQuery project demonstrates my technical skills in SQL using Common Table
 ## Data Visualization (Power BI)
 `power_bi/`
  - **`aksziii_sales.pbix`**: After connecting to BigQuery in Power BI, the `v_sales_report` view has been used to create a simple Power BI report.
+
+DAX measures
+- **Total Quantity** = SUM(v_sales_report[total_quantity])
+- **Total Sales Value** = SUM(v_sales_report[sales_value])
+- **YoY - Total Quantity** = DIVIDE([Total Quantity],CALCULATE([Total Quantity],DATEADD('Calendar'[Date],-1,YEAR)))-1
+- **YoY - Total Sales Value** = DIVIDE([Total Sales Value],CALCULATE([Total Sales Value],DATEADD('Calendar'[Date],-1,YEAR)))-1
